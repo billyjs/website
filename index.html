@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Billy Schulze</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Crete+Round" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
 </head>
 <body>
-    <p>Hello!</p>
+    <div id="info-wrapper">
+        <div id="info">
+            <h1 id="name">Billy Schulze</h1>
+            <h2 id="typed"></h2>
+            <p>Aspiring Software Developer. Currently studying Software Engineering at the <a href="https://www.uq.edu.au/">University of Queensland</a>.</p>
+            <a href="https://www.linkedin.com/in/billyschulze/" target="_blank"><div class="card card-linkedin">
+                <div class="card-left"><i class="fab fa-linkedin fa-lg"></i></div>
+                <div class="card-right">billyschulze</div>
+            </div></a>
+            <a href="https://www.github.com/billy-7/" target="_blank"><div class="card card-github">
+                <div class="card-left"><i class="fab fa-github fa-lg"></i></div>
+                <div class="card-right">billy-7</div>
+            </div></a>
+            <a href="#contact"><div class="card card-email">
+                <div class="card-left"><i class="far fa-envelope fa-lg"></i></div>
+                <div class="card-right">billyschulze97@gmail.com</div>
+            </div></a>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div id="contact" class="item">Contact</div>
+    </div>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["Developer", "Student"],
+            typeSpeed: 100,
+            backSpeed: 0,
+            backDelay: 5000,
+            fadeOut: true,
+            loop: true
+        });
+    </script>
 </body>
 </html>

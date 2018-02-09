@@ -1,0 +1,148 @@
+/*colours
+
+background: #ECECEC
+
+ */
+
+body {
+    font-family: 'ABeeZee', sans-serif;
+    background-color: #fafafa;
+    color: #4a4a4a;
+    margin: 0;
+    min-height: 100%;
+    display: block;
+}
+
+#info-wrapper {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 40%;
+    height: 100%;
+}
+
+#info {
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    width: 70%;
+}
+
+#btn-contact {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1em;
+    border: 1px solid #4a4a4a;
+    background-color: #fafafa;
+    padding: 14px 20px;
+    color: #4a4a4a;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#btn-contact:hover {
+    background-color: #4a4a4a;
+    color: #fafafa;
+}
+
+#portfolio {
+    width: 60%;
+    margin-left: 40%;
+    background-color: green;
+    flex-grow: 2;
+    min-width: 300px;
+    flex-flow: column;
+    display: flex;
+    overflow: auto;
+}
+
+#name {
+    font-family: 'Crete Round', serif;
+    font-size: 4em;
+    /*font-weight: bold;*/
+}
+
+.item {
+    height: 100vh;
+}
+
+.card {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+}
+
+.card:hover .card-left, .card:hover .card-right {
+    background-color: #f57d00;
+    color: #fafafa;
+}
+
+.card-github:hover .card-left, .card-github:hover .card-right {
+    background-color: #333;
+    color: #fafafa;
+}
+
+.card-github .card-left {
+    border-color: #333;
+    background-color: #333;
+}
+
+.card-github .card-right {
+    border-color: #333;
+    color: #333;
+}
+
+.card-linkedin:hover .card-left, .card-linkedin:hover .card-right {
+    background-color: #0077b5;
+    color: #fafafa;
+}
+
+.card-linkedin .card-left {
+    border-color: #0077b5;
+    background-color: #0077b5;
+}
+
+.card-linkedin .card-right {
+    border-color: #0077b5;
+    color: #0077b5;
+}
+
+.card-left {
+    border: 2px solid #f57d00;
+    width: 18px;
+    background-color: #f57d00;
+    color: #fafafa;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all 0.3s;
+}
+
+.card-right {
+    border: 2px solid #f57d00;
+    background-color: #fafafa;
+    color: #f57d00;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    flex-grow: 1;
+    transition: all 0.3s;
+}
+
+#typed {
+    height: 30px;
+    width: 100%;
+    display: inline;
+}
+
+.typed-cursor {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact {
+    background-color: lightblue;
+}
