@@ -160,5 +160,76 @@ a {
 }
 
 #contact {
-    background-color: lightblue;
+    background-color: #252627;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    /*background-color: red;*/
+    color: #fafafa;
+    width: 80%;
+}
+
+.contact-form {
+    font-size: 0;
+}
+
+.contact-form * {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #37393b;
+    padding: 0 0 0 10px;
+    height: 45px;
+    background-color: #37393b;
+    color: #8d8d8d;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+.contact-form *:focus {
+    border-bottom: 2px solid #0077b5;
+}
+
+.contact-form input {
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.contact input, .contact textarea {
+    width: calc(100% - 10px);
+}
+
+.contact input[name=name], .contact input[name=email] {
+    width: calc(50% - 15px);
+}
+
+.contact input[name=name] {
+    margin-right: 10px;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 100px;
+    font-size: 16px;
+    padding-top: 10px;
+    max-height: 500px;
+    min-height: 100px;
+}
+
+.contact button {
+    font-size: 16px;
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid #37393b;
+    background-color: #252627;
+    color: #8d8d8d;
+    width: 100px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #37393b;
+    color: #fafafa;
 }

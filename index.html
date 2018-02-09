@@ -35,11 +35,23 @@
 
     <div id="portfolio">
         <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div id="contact" class="item">Contact</div>
+        <div class="item">Item 2</div>-
+        <div id="contact" class="item">
+            <div class="contact">
+                <h2>Contact Me</h2>
+                <form class="contact-form" method="POST" action="https://formspree.io/billyschulze97+website@gmail.com">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                    <input type="hidden" name="_next" value="//localhost:63342/website/index.html?_ijt=ibasktogliev7bueq5epft5q7p" />
+                </form>
+            </div>
+        </div>
     </div>
 
-    <script>
+    <script type="text/javascript">
         var typed = new Typed('#typed', {
             strings: ["Developer", "Student"],
             typeSpeed: 100,
@@ -48,6 +60,14 @@
             fadeOut: true,
             loop: true
         });
+
+        document.getElementById('contact-link').onclick = function() {
+            document.getElementById("contact").scrollIntoView({
+                behavior: 'smooth'
+            });
+            return false;
+        }
+
     </script>
 </body>
 </html>
