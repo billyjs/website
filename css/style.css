@@ -97,6 +97,7 @@ body {
 }
 
 .card-linkedin .card-left {
+    padding: 10px 8px 10px 12px;
     border-color: #0077b5;
     background-color: #0077b5;
 }
@@ -104,6 +105,21 @@ body {
 .card-linkedin .card-right {
     border-color: #0077b5;
     color: #0077b5;
+}
+
+.card-loc:hover .card-left, .card-loc:hover .card-right {
+    background-color: #82c91e;
+    color: #fafafa;
+}
+
+.card-loc .card-left {
+    border-color: #82c91e;
+    background-color: #82c91e;
+}
+
+.card-loc .card-right {
+    border-color: #82c91e;
+    color: #82c91e;
 }
 
 .card-left {
