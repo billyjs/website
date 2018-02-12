@@ -233,3 +233,25 @@ a {
     background-color: #37393b;
     color: #fafafa;
 }
+
+#pycam {
+    background-image: url("../images/x62.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.portfolio-info {
+    margin-top: 20px;
+    position: sticky;
+    top: 80vh;
+}
+
+.portfolio-info * {
+    background: rgb(255,255,255);
+    background: rgba(255,255,255,0.5);
+    padding: 10px 2%;
+    margin: 0;
+    display: inline-block;
+    color: #000;
+}
