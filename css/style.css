@@ -247,6 +247,10 @@ a {
     top: 80vh;
 }
 
+.portfolio-info:hover * {
+    background-color: #fafafa;
+}
+
 .portfolio-info * {
     background: rgb(255,255,255);
     background: rgba(255,255,255,0.5);
@@ -254,4 +258,5 @@ a {
     margin: 0;
     display: inline-block;
     color: #000;
+    transition: all 0.3s;
 }
